@@ -1,0 +1,751 @@
+---
+import astroLogo from "../assets/astro.svg";
+import background from "../assets/background.svg";
+---
+
+<div
+  class="relative flex size-full min-h-screen flex-col bg-[#141414] dark group/design-root overflow-x-hidden"
+  style='font-family: "Work Sans", "Noto Sans", sans-serif;'
+>
+  <div class="layout-container flex h-full grow flex-col">
+    <header
+      class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#27313A] px-10 py-3"
+    >
+      <div class="flex items-center gap-4 text-[#FFFFFF]">
+        <div class="size-4">
+          <svg
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"
+              fill="currentColor"></path>
+          </svg>
+        </div>
+        <h2
+          class="text-[#FFFFFF] text-lg font-bold leading-tight tracking-[-0.015em]"
+        >
+          Fades &amp; Blades
+        </h2>
+      </div>
+      <div class="flex flex-1 justify-end gap-8">
+        <div class="flex items-center gap-9">
+          <a class="text-[#FFFFFF] text-sm font-medium leading-normal" href="#"
+            >Layanan</a
+          >
+          <a class="text-[#FFFFFF] text-sm font-medium leading-normal" href="#"
+            >Parber</a
+          >
+          <a class="text-[#FFFFFF] text-sm font-medium leading-normal" href="#"
+            >Harga</a
+          >
+          <a class="text-[#FFFFFF] text-sm font-medium leading-normal" href="#"
+            >Testimoni</a
+          >
+        </div>
+        <button
+          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#359EFF] text-[#FFFFFF] text-sm font-bold leading-normal tracking-[0.015em]"
+        >
+          <span class="truncate">Hubungi Kami</span>
+        </button>
+      </div>
+    </header>
+    <div class="px-40 flex flex-1 justify-center py-5">
+      <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+        <div class="@container">
+          <div class="@[480px]:p-4">
+            <div
+              class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4"
+              style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://cdn.usegalileo.ai/sdxl10/174f3ce8-b2f7-4dd6-880b-c5d1b24f74ec.png");'
+            >
+              <div class="flex flex-col gap-2 text-center">
+                <h1
+                  class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                >
+                  Selamat datang di Fades &amp; Blades
+                </h1>
+                <h2
+                  class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal"
+                >
+                  Tidak ada tempat yang lebih baik untuk memperbarui gaya Anda
+                  selain di Fades &amp; Blades. Dua barber kami yang
+                  berpengalaman siap menghadirkan potongan rambut sempurna dan
+                  pelayanan terbaik. Walk-ins selalu disambut dengan hangat!
+                </h2>
+              </div>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#359EFF] text-[#FFFFFF] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+              >
+                <span class="truncate">Hubungi Kami</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-3 px-4 py-3">
+          <div
+            class="flex min-w-[111px] flex-1 basis-[fit-content] flex-col gap-2 rounded-lg border border-[#27313A] p-3 items-center text-center"
+          >
+            <p
+              class="text-[#FFFFFF] tracking-light text-2xl font-bold leading-tight"
+            >
+              5.0
+            </p>
+            <div class="flex items-center gap-2">
+              <p class="text-[#9BACBB] text-sm font-normal leading-normal">
+                Rata-rata Rating
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex min-w-[111px] flex-1 basis-[fit-content] flex-col gap-2 rounded-lg border border-[#27313A] p-3 items-center text-center"
+          >
+            <p
+              class="text-[#FFFFFF] tracking-light text-2xl font-bold leading-tight"
+            >
+              8+
+            </p>
+            <div class="flex items-center gap-2">
+              <p class="text-[#9BACBB] text-sm font-normal leading-normal">
+                Tahun Pengalaman
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex min-w-[111px] flex-1 basis-[fit-content] flex-col gap-2 rounded-lg border border-[#27313A] p-3 items-center text-center"
+          >
+            <p
+              class="text-[#FFFFFF] tracking-light text-2xl font-bold leading-tight"
+            >
+              1200+
+            </p>
+            <div class="flex items-center gap-2">
+              <p class="text-[#9BACBB] text-sm font-normal leading-normal">
+                Pelanggan
+              </p>
+            </div>
+          </div>
+        </div>
+        <h2
+          class="text-[#FFFFFF] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+        >
+          Tentang Kami
+        </h2>
+        <p
+          class="text-[#FFFFFF] text-base font-normal leading-normal pb-3 pt-1 px-4"
+        >
+          Didirikan oleh Lucas dan Jared, Fades &amp; Blades adalah barbershop
+          favorit di pusat kota. Kami ahli dalam potongan rambut modern, trim
+          jenggot rapi, dan layanan cukur dengan handuk panas. Fokus kami?
+          Memberikan pengalaman yang nyaman dan gaya yang memukau setiap kali
+          Anda datang.
+        </p>
+        <h2
+          class="text-[#FFFFFF] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+        >
+          Layanan Kami
+        </h2>
+        <div
+          class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4"
+        >
+          <div class="flex flex-col gap-3 pb-3">
+            <div
+              class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/21e0e58b-dda6-4a19-8a6a-0eb4185f2793.png");'
+            >
+            </div>
+            <p class="text-[#FFFFFF] text-base font-medium leading-normal">
+              Potongan Rambut
+            </p>
+          </div>
+          <div class="flex flex-col gap-3 pb-3">
+            <div
+              class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/c7632885-16aa-4c18-89f1-91f4363fea5d.png");'
+            >
+            </div>
+            <p class="text-[#FFFFFF] text-base font-medium leading-normal">
+              Pemangkasan Jenggot
+            </p>
+          </div>
+          <div class="flex flex-col gap-3 pb-3">
+            <div
+              class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/4dce3ee6-dcb1-4da4-955b-6e74aad0ae2d.png");'
+            >
+            </div>
+            <p class="text-[#FFFFFF] text-base font-medium leading-normal">
+              Cukur dengan Handuk Panas
+            </p>
+          </div>
+        </div>
+        <h2
+          class="text-[#FFFFFF] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+        >
+          Kenali Parber Kami
+        </h2>
+        <div
+          class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4"
+        >
+          <div class="flex flex-col gap-3 text-center pb-3">
+            <div class="px-4">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full"
+                style='background-image: url("https://cdn.usegalileo.ai/sdxl10/80bce23a-3cc1-40e7-bf03-4e8c1548507d.png");'
+              >
+              </div>
+            </div>
+            <div>
+              <p class="text-[#FFFFFF] text-base font-medium leading-normal">
+                Lucas - Pengalaman 10 tahun
+              </p>
+              <p class="text-[#9BACBB] text-sm font-normal leading-normal">
+                Master Parber
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3 text-center pb-3">
+            <div class="px-4">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full"
+                style='background-image: url("https://cdn.usegalileo.ai/sdxl10/2ed10119-d5c8-4f90-9915-140c5c7234b6.png");'
+              >
+              </div>
+            </div>
+            <div>
+              <p class="text-[#FFFFFF] text-base font-medium leading-normal">
+                Jared - Pengalaman 8 tahun
+              </p>
+              <p class="text-[#9BACBB] text-sm font-normal leading-normal">
+                Senior Parber
+              </p>
+            </div>
+          </div>
+        </div>
+        <h2
+          class="text-[#FFFFFF] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+        >
+          Testimoni Pelanggan
+        </h2>
+        <div class="flex flex-col gap-4 overflow-x-hidden bg-[#141414] p-4">
+          <div class="flex flex-col gap-3 bg-[#141414]">
+            <div class="flex-1">
+              <p class="text-[#FFFFFF] text-base font-medium leading-normal">
+                Carter
+              </p>
+              <p class="text-[#9BACBB] text-sm font-normal leading-normal">
+                Jan 2023
+              </p>
+            </div>
+            <div class="flex gap-0.5">
+              <div
+                class="text-[#359EFF]"
+                data-icon="Star"
+                data-size="20px"
+                data-weight="fill"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                  >
+                  </path>
+                </svg>
+              </div>
+              <div
+                class="text-[#359EFF]"
+                data-icon="Star"
+                data-size="20px"
+                data-weight="fill"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                  >
+                  </path>
+                </svg>
+              </div>
+              <div
+                class="text-[#359EFF]"
+                data-icon="Star"
+                data-size="20px"
+                data-weight="fill"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                  >
+                  </path>
+                </svg>
+              </div>
+              <div
+                class="text-[#359EFF]"
+                data-icon="Star"
+                data-size="20px"
+                data-weight="fill"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                  >
+                  </path>
+                </svg>
+              </div>
+              <div
+                class="text-[#359EFF]"
+                data-icon="Star"
+                data-size="20px"
+                data-weight="fill"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                  >
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <p class="text-[#FFFFFF] text-base font-normal leading-normal">
+              <p class="text-[#FFFFFF] text-base font-normal leading-normal">
+                "Pelayanan top, barber berpengalaman, dan hasil yang selalu
+                memuaskan. Fades &amp; Blades adalah tempat wajib untuk gaya
+                rambut keren!"
+              </p>
+            </p>
+          </div>
+          <div class="flex flex-col gap-3 bg-[#141414]">
+            <div class="flex-1">
+              <p class="text-[#FFFFFF] text-base font-medium leading-normal">
+                Jason
+              </p>
+              <p class="text-[#9BACBB] text-sm font-normal leading-normal">
+                Des 2022
+              </p>
+            </div>
+            <div class="flex gap-0.5">
+              <div
+                class="text-[#359EFF]"
+                data-icon="Star"
+                data-size="20px"
+                data-weight="fill"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                  >
+                  </path>
+                </svg>
+              </div>
+              <div
+                class="text-[#359EFF]"
+                data-icon="Star"
+                data-size="20px"
+                data-weight="fill"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                  >
+                  </path>
+                </svg>
+              </div>
+              <div
+                class="text-[#359EFF]"
+                data-icon="Star"
+                data-size="20px"
+                data-weight="fill"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                  >
+                  </path>
+                </svg>
+              </div>
+              <div
+                class="text-[#359EFF]"
+                data-icon="Star"
+                data-size="20px"
+                data-weight="fill"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                  >
+                  </path>
+                </svg>
+              </div>
+              <div
+                class="text-[#359EFF]"
+                data-icon="Star"
+                data-size="20px"
+                data-weight="fill"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                  >
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <p class="text-[#FFFFFF] text-base font-normal leading-normal">
+              Layanan yang bagus, staf yang ramah, dan suasana yang keren. Saya
+              sangat senang dengan potongan rambut saya dan pasti akan kembali.
+            </p>
+          </div>
+          <div class="flex flex-col gap-3 bg-[#141414]">
+            <div class="flex-1">
+              <p class="text-[#FFFFFF] text-base font-medium leading-normal">
+                James
+              </p>
+              <p class="text-[#9BACBB] text-sm font-normal leading-normal">
+                Nov 2022
+              </p>
+            </div>
+            <div class="flex gap-0.5">
+              <div
+                class="text-[#359EFF]"
+                data-icon="Star"
+                data-size="20px"
+                data-weight="fill"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                  >
+                  </path>
+                </svg>
+              </div>
+              <div
+                class="text-[#359EFF]"
+                data-icon="Star"
+                data-size="20px"
+                data-weight="fill"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                  >
+                  </path>
+                </svg>
+              </div>
+              <div
+                class="text-[#359EFF]"
+                data-icon="Star"
+                data-size="20px"
+                data-weight="fill"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                  >
+                  </path>
+                </svg>
+              </div>
+              <div
+                class="text-[#359EFF]"
+                data-icon="Star"
+                data-size="20px"
+                data-weight="fill"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                  >
+                  </path>
+                </svg>
+              </div>
+              <div
+                class="text-[#359EFF]"
+                data-icon="Star"
+                data-size="20px"
+                data-weight="fill"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                  >
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <p class="text-[#FFFFFF] text-base font-normal leading-normal">
+              Barbershop terbaik di kota! Para parbernya ahli, harga yang adil,
+              dan toko ini memiliki vibe yang baik. Saya adalah pelanggan tetap
+              dan selalu puas.
+            </p>
+          </div>
+        </div>
+        <h2
+          class="text-[#FFFFFF] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+        >
+          Galeri
+        </h2>
+        <div
+          class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4"
+        >
+          <div class="flex flex-col gap-3">
+            <div
+              class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/45fd053e-f62e-468b-aa8c-44008fb956e7.png");'
+            >
+            </div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <div
+              class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/4bdfff8e-83ad-4e97-817f-bff0b060aecf.png");'
+            >
+            </div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <div
+              class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/a875caf8-aa36-4f28-b830-49915e33fa42.png");'
+            >
+            </div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <div
+              class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/df603ea8-706c-4713-a228-ca717b94de89.png");'
+            >
+            </div>
+          </div>
+        </div>
+        <h2
+          class="text-[#FFFFFF] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+        >
+          Lokasi Kami
+        </h2>
+        <div class="px-4 py-3">
+          <div
+            class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl object-cover mb-3"
+            style='background-image: url("https://cdn.usegalileo.ai/maps/7a8afe1e-88c2-4880-a8dc-712c172b572b.png");'
+          >
+          </div>
+          <p class="text-[#FFFFFF] text-base font-normal leading-normal">
+            Kami berlokasi di Jl. Jend. Sudirman No.52, Senayan, Jakarta
+            Selatan.
+          </p>
+          <p class="text-[#FFFFFF] text-base font-normal leading-normal">
+            Jam Operasional: Senin - Jumat: 08.00 - 20.00, Sabtu: 08.00 - 18.00,
+            Minggu: Tutup.
+          </p>
+        </div>
+        <div class="@container">
+          <div
+            class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20"
+          >
+            <div class="flex flex-col gap-2 text-center">
+              <h1
+                class="text-[#FFFFFF] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[640px] mx-auto"
+              >
+                Siap untuk potongan rambut segar?
+              </h1>
+              <p
+                class="text-[#FFFFFF] text-base font-normal leading-normal max-w-[720px"
+              >
+                Tidak perlu ribet, datang saja langsung! Kami siap menyambut
+                Anda kapan saja selama jam operasional. Untuk pertanyaan lebih
+                lanjut, hubungi kami sekarang.
+              </p>
+            </div>
+            <div class="flex flex-1 justify-center">
+              <div class="flex justify-center">
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#359EFF] text-[#FFFFFF] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow"
+                >
+                  <span class="truncate">Hubungi Kami</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="w-full border-t border-[#27313A] bg-[#141414]">
+      <div class="max-w-[960px] mx-auto px-4 py-12">
+        <!-- Logo & Description -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 text-[#FFFFFF]">
+                <svg
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"
+                    fill="currentColor"></path>
+                </svg>
+              </div>
+              <h2 class="text-[#FFFFFF] text-xl font-bold">Fades & Blades</h2>
+            </div>
+            <p class="text-[#9BACBB] text-sm leading-relaxed">
+              Barbershop premium dengan layanan terbaik untuk tampilan terbaik
+              Anda.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="flex flex-col gap-4">
+            <h3 class="text-[#FFFFFF] text-lg font-bold">Layanan</h3>
+            <nav class="flex flex-col gap-3">
+              <a
+                href="#"
+                class="text-[#9BACBB] hover:text-[#359EFF] transition-colors text-sm"
+                >Potongan Rambut</a
+              >
+              <a
+                href="#"
+                class="text-[#9BACBB] hover:text-[#359EFF] transition-colors text-sm"
+                >Pemangkasan Jenggot</a
+              >
+              <a
+                href="#"
+                class="text-[#9BACBB] hover:text-[#359EFF] transition-colors text-sm"
+                >Cukur</a
+              >
+            </nav>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="flex flex-col gap-4">
+            <h3 class="text-[#FFFFFF] text-lg font-bold">Kontak</h3>
+            <div class="flex flex-col gap-3">
+              <p class="text-[#9BACBB] text-sm">
+                <span class="block">+62 812-3456-7890</span>
+                <span class="block mt-1">info@fadesandblades.com</span>
+              </p>
+              <p class="text-[#9BACBB] text-sm">
+                Jl. Jend. Sudirman No.52<br />
+                Jakarta Selatan, 12190
+              </p>
+            </div>
+          </div>
+
+          <!-- Social Media -->
+          <div class="flex flex-col gap-4">
+            <h3 class="text-[#FFFFFF] text-lg font-bold">Sosial Media</h3>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="#"
+                class="text-[#9BACBB] hover:text-[#359EFF] transition-colors text-sm"
+                >Instagram</a
+              >
+              <a
+                href="#"
+                class="text-[#9BACBB] hover:text-[#359EFF] transition-colors text-sm"
+                >Facebook</a
+              >
+              <a
+                href="#"
+                class="text-[#9BACBB] hover:text-[#359EFF] transition-colors text-sm"
+                >Twitter</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="mt-12 pt-8 border-t border-[#27313A]">
+          <p class="text-center text-[#9BACBB] text-sm">
+            &copy; 2024 Fades & Blades. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>

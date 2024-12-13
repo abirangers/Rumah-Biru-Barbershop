@@ -1,0 +1,66 @@
+<footer class="w-full border-t border-[#27313A] bg-[#141414]">
+  <div class="max-w-[960px] mx-auto px-4 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      {/* Logo & Description */}
+      <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-6 h-6 text-[#FFFFFF]">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"/>
+            </svg>
+          </div>
+          <h2 class="text-[#FFFFFF] text-xl font-bold">Fades & Blades</h2>
+        </div>
+        <p class="text-[#9BACBB] text-sm leading-relaxed">
+          Barbershop premium dengan layanan terbaik untuk tampilan terbaik Anda.
+        </p>
+      </div>
+
+      {/* Quick Links */}
+      <div class="flex flex-col gap-4">
+        <h3 class="text-[#FFFFFF] text-lg font-bold">Layanan</h3>
+        <nav class="flex flex-col gap-3">
+          {['Potongan Rambut', 'Pemangkasan Jenggot', 'Cukur'].map(service => (
+            <a href="#" class="text-[#9BACBB] hover:text-[#359EFF] transition-colors text-sm">
+              {service}
+            </a>
+          ))}
+        </nav>
+      </div>
+
+      {/* Contact Info */}
+      <div class="flex flex-col gap-4">
+        <h3 class="text-[#FFFFFF] text-lg font-bold">Kontak</h3>
+        <div class="flex flex-col gap-3">
+          <p class="text-[#9BACBB] text-sm">
+            <span class="block">+62 812-3456-7890</span>
+            <span class="block mt-1">info@fadesandblades.com</span>
+          </p>
+          <p class="text-[#9BACBB] text-sm">
+            Jl. Jend. Sudirman No.52<br />
+            Jakarta Selatan, 12190
+          </p>
+        </div>
+      </div>
+
+      {/* Social Media */}
+      <div class="flex flex-col gap-4">
+        <h3 class="text-[#FFFFFF] text-lg font-bold">Sosial Media</h3>
+        <div class="flex flex-wrap gap-4">
+          {['Instagram', 'Facebook', 'Twitter'].map(social => (
+            <a href="#" class="text-[#9BACBB] hover:text-[#359EFF] transition-colors text-sm">
+              {social}
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    {/* Copyright */}
+    <div class="mt-12 pt-8 border-t border-[#27313A]">
+      <p class="text-center text-[#9BACBB] text-sm">
+        &copy; {new Date().getFullYear()} Fades & Blades. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>

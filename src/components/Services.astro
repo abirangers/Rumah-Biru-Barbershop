@@ -1,0 +1,42 @@
+---
+const services = [
+  {
+    image:
+      "https://cdn.usegalileo.ai/sdxl10/21e0e58b-dda6-4a19-8a6a-0eb4185f2793.png",
+    title: "Potongan Rambut",
+  },
+  {
+    image:
+      "https://cdn.usegalileo.ai/sdxl10/c7632885-16aa-4c18-89f1-91f4363fea5d.png",
+    title: "Pemangkasan Jenggot",
+  },
+  {
+    image:
+      "https://cdn.usegalileo.ai/sdxl10/4dce3ee6-dcb1-4da4-955b-6e74aad0ae2d.png",
+    title: "Cukur dengan Handuk Panas",
+  },
+];
+---
+
+<div id="services">
+  <h2
+    class="text-[#FFFFFF] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+  >
+    Layanan Kami
+  </h2>
+  <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+    {
+      services.map((service) => (
+        <div class="flex flex-col gap-3 pb-3">
+          <div
+            class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+            style={`background-image: url("${service.image}");`}
+          />
+          <p class="text-[#FFFFFF] text-base font-medium leading-normal">
+            {service.title}
+          </p>
+        </div>
+      ))
+    }
+  </div>
+</div>
