@@ -1,37 +1,120 @@
-<div id="gallery">
+---
+import "swiper/css";
+import GallerySlide from "./GallerySlide.astro";
+
+interface Gallery {
+  acf: {
+    image: string;
+    image_alt_text: string;
+  };
+}
+
+const response = await fetch(
+  `${import.meta.env.PUBLIC_API_URL}/galleries?acf_format=standard`,
+  {
+    headers: {
+      "Content-Type": "application/json",
+    },
+  }
+);
+const gallery: Gallery[] = await response.json();
+---
+
+<div id="gallery" class="relative">
   <h2
     class="text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 text-white"
   >
     Galeri
   </h2>
-  <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-    <div class="flex flex-col gap-3">
-      <div
-        class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-        style='background-image: url("https://cdn.usegalileo.ai/sdxl10/45fd053e-f62e-468b-aa8c-44008fb956e7.png");'
-      >
-      </div>
-    </div>
-    <div class="flex flex-col gap-3">
-      <div
-        class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-        style='background-image: url("https://cdn.usegalileo.ai/sdxl10/4bdfff8e-83ad-4e97-817f-bff0b060aecf.png");'
-      >
-      </div>
-    </div>
-    <div class="flex flex-col gap-3">
-      <div
-        class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-        style='background-image: url("https://cdn.usegalileo.ai/sdxl10/a875caf8-aa36-4f28-b830-49915e33fa42.png");'
-      >
-      </div>
-    </div>
-    <div class="flex flex-col gap-3">
-      <div
-        class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-        style='background-image: url("https://cdn.usegalileo.ai/sdxl10/df603ea8-706c-4713-a228-ca717b94de89.png");'
-      >
-      </div>
+
+  <!-- Slide indicator -->
+  <div class="absolute right-6 top-6 flex items-center gap-2 text-white/70">
+    <span class="text-sm">Geser</span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path d="M5 12h14"></path>
+      <path d="m12 5 7 7-7 7"></path>
+    </svg>
+  </div>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      {
+        gallery.map((gallery, index) => (
+          <GallerySlide
+            server:defer
+            src={gallery.acf.image}
+            alt={gallery.acf.image_alt_text}
+          >
+            <div slot="fallback" class="animate-pulse">
+              <div class="w-[214px] h-[214px] bg-gray-700 rounded-xl mr-4" />
+            </div>
+          </GallerySlide>
+        ))
+      }
     </div>
   </div>
 </div>
+
+<script>
+  import Swiper from "swiper";
+
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 16,
+    freeMode: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1.2,
+        spaceBetween: 10,
+      },
+      480: {
+        slidesPerView: 2.2,
+        spaceBetween: 16,
+      },
+      640: {
+        slidesPerView: 4,
+        spaceBetween: 16,
+      },
+    },
+  });
+
+  // Hide indicator after first interaction
+  const gallery = document.querySelector("#gallery");
+  const indicator = gallery?.querySelector(".absolute");
+  swiper.on("touchStart", () => {
+    if (indicator) {
+      (indicator as HTMLElement).style.opacity = "0";
+      setTimeout(() => {
+        (indicator as HTMLElement).style.display = "none";
+      }, 300);
+    }
+  });
+</script>
+
+<style>
+  .swiper {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .absolute {
+    transition: opacity 0.3s ease;
+  }
+</style>

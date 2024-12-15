@@ -1,0 +1,52 @@
+---
+import TestimonialCard from "./TestimonialCard.astro";
+interface Testimonial {
+  acf: {
+    customer_name: string;
+    review_date: string;
+    rating: number;
+    review_text: string;
+  };
+}
+
+const response = await fetch(`${import.meta.env.PUBLIC_API_URL}/testimonials`, {
+  headers: {
+    "Content-Type": "application/json",
+  },
+});
+const testimonials: Testimonial[] = await response.json();
+---
+
+<div id="testimonials">
+  <h2
+    class="text-[#FFFFFF] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+  >
+    Testimoni Pelanggan
+  </h2>
+  <div class="flex flex-col gap-4 overflow-x-hidden bg-[#141414] p-4">
+    {
+      testimonials.map((testimonial) => (
+        <TestimonialCard
+          server:defer
+          customerName={testimonial.acf.customer_name}
+          reviewDate={testimonial.acf.review_date}
+          rating={testimonial.acf.rating}
+          reviewText={testimonial.acf.review_text}
+        >
+          <div slot="fallback" class="animate-pulse">
+            <div class="h-4 bg-gray-700 rounded w-3/4 mb-2" />
+            <div class="h-3 bg-gray-700 rounded w-1/2 mb-4" />
+            <div class="flex gap-1 mb-4">
+              {Array(5)
+                .fill(0)
+                .map(() => (
+                  <div class="w-5 h-5 bg-gray-700 rounded" />
+                ))}
+            </div>
+            <div class="h-20 bg-gray-700 rounded" />
+          </div>
+        </TestimonialCard>
+      ))
+    }
+  </div>
+</div>

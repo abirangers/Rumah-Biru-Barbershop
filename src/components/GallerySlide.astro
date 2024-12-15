@@ -1,0 +1,20 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+  src: string;
+  alt: string;
+}
+
+const { src, alt } = Astro.props;
+---
+
+<div class="swiper-slide">
+  <Image
+    src={src}
+    alt={alt}
+    class="w-full h-full object-cover rounded-xl aspect-square"
+    width={214}
+    height={214}
+  />
+</div>
